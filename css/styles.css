@@ -3,6 +3,7 @@ body {
   color: #000000;
   background-color: #f9f9f9;
   font-family: 'Merriweather', serif;
+  padding-top: 4rem;
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus {
@@ -11,26 +12,47 @@ body {
 
 .navbar-brand  {
   margin-right: 0;
-  max-width: 50%; /* solution for toggler always popping below logo */
 }
 
 .navbar button.navbar-toggler {
-  border: 1px solid #ba1320;
-  padding: 0.1rem 0.25rem;
-  opacity: .8;
+  border: none;
+  color: #ba1320;
+}
+.navbar-toggler-icon { /* not currently used (replaced with hamburger menu button) */
+  color: #ba1320;
 }
 
 #logo-buch {
-  width: 25%
+  width: 25%;
+  margin-left: 5px;
 }
 #logo-schriftzug {
   width: 50%;
+  display: none;
+}
+.jumbotron h1 {
+  font-size: 1.5em;
+}
+.jumbotron.d-md-flex {
+  margin-bottom: 20px;
 }
 
 /*******************************************************/
-@media (max-width: 575px) {
+@media (max-width: 575.98px) {
   #logo-buch {width: 30% !important;}
-  #logo-schriftzug {width: 75%;}
-
 }
+@media (min-width: 576px) {
+  #logo-schriftzug {display: inline-block; width: 50%;}
+  body {padding-top: 6.5rem;}
+}
+@media (min-width: 768px) {
+  body {padding-top: 7.8rem;}
+}
+@media (min-width: 992px) {
+  body {padding-top: 8.5rem;}
+}
+@media (min-width: 1200px) {
+  #main-container {max-width: 1500px;}
+}
+
 /********************************************************/
