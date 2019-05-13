@@ -8,3 +8,29 @@ body {
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
+
+.navbar-brand  {
+  margin-right: 0;
+  max-width: 50%; /* solution for toggler always popping below logo */
+}
+
+.navbar button.navbar-toggler {
+  border: 1px solid #ba1320;
+  padding: 0.1rem 0.25rem;
+  opacity: .8;
+}
+
+#logo-buch {
+  width: 25%
+}
+#logo-schriftzug {
+  width: 50%;
+}
+
+/*******************************************************/
+@media (max-width: 575px) {
+  #logo-buch {width: 30% !important;}
+  #logo-schriftzug {width: 75%;}
+
+}
+/********************************************************/
