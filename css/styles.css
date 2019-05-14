@@ -5,6 +5,9 @@ body {
   font-family: 'Merriweather', serif;
   padding-top: 4rem;
 }
+ol {
+  line-height: 1.6rem;
+}
 
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
@@ -36,6 +39,32 @@ body {
 .jumbotron.d-md-flex {
   margin-bottom: 20px;
 }
+#input-field-info {
+  border: 1px solid #ba1320;
+  border-radius: .2rem;
+}
+.jumbotron.custom {
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #f9ecec;
+  border-radius: 0.3rem;
+}
+#map {
+  width: 100%;
+}
+.parallax {
+  /* The image used */
+  background-image: url("img/black-and-white-books-education-1280px.jpg");
+
+  /* Set a specific height */
+  height: 100px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 /*******************************************************/
 @media (max-width: 575.98px) {
@@ -43,6 +72,7 @@ body {
 }
 @media (min-width: 576px) {
   #logo-schriftzug {display: inline-block; width: 50%;}
+  #map {width: 50%;}
   body {padding-top: 6.5rem;}
 }
 @media (min-width: 768px) {
@@ -50,6 +80,7 @@ body {
 }
 @media (min-width: 992px) {
   body {padding-top: 8.5rem;}
+  #map {height: 400px;}
 }
 @media (min-width: 1200px) {
   #main-container {max-width: 1500px;}
