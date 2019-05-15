@@ -3,7 +3,7 @@ body {
   color: #000000;
   background-color: #f9f9f9;
   font-family: 'Merriweather', serif;
-  padding-top: 4rem;
+  padding-top: 4.5rem;
 }
 ol {
   line-height: 1.6rem;
@@ -12,7 +12,9 @@ ol {
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-
+.shadow {
+  box-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+}
 .navbar-brand  {
   margin-right: 0;
 }
@@ -33,7 +35,14 @@ ol {
   width: 50%;
   display: none;
 }
-.jumbotron h1 {
+#unterschrift {
+  width: 50%;
+}
+#unterüberschrift {
+  font-size: 14px;
+}
+
+.jumbotron h2 {
   font-size: 1.5em;
 }
 .jumbotron.d-md-flex {
@@ -52,19 +61,6 @@ ol {
 #map {
   width: 100%;
 }
-.parallax {
-  /* The image used */
-  background-image: url("img/black-and-white-books-education-1280px.jpg");
-
-  /* Set a specific height */
-  height: 100px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /*******************************************************/
 @media (max-width: 575.98px) {
@@ -74,16 +70,23 @@ ol {
   #logo-schriftzug {display: inline-block; width: 50%;}
   #map {width: 50%;}
   body {padding-top: 6.5rem;}
+  #unterschrift {width: 33.33%;}
+
 }
 @media (min-width: 768px) {
   body {padding-top: 7.8rem;}
+  #unterüberschrift {font-size: 16px;}
+  .jumbotron h2 {font-size: 1.8em;}
 }
 @media (min-width: 992px) {
   body {padding-top: 8.5rem;}
   #map {height: 400px;}
+  #unterschrift {width: 20%;}
 }
 @media (min-width: 1200px) {
   #main-container {max-width: 1500px;}
+  #unterüberschrift {font-size: 20px;}
+  .jumbotron h2 {font-size: 2em;}
 }
 
 /********************************************************/
