@@ -1,0 +1,100 @@
+body {
+  font-size: 16px;
+  color: #000000;
+  background-color: #f9f9f9;
+  font-family: 'Merriweather', serif;
+  padding-top: 4.5rem;
+}
+ol {
+  line-height: 1.6rem;
+}
+
+.navbar-brand  {
+  margin-right: 0;
+}
+
+.navbar button.navbar-toggler {
+  border: none;
+  color: #ba1320;
+}
+.navbar-toggler-icon { /* not currently used (replaced with hamburger menu button) */
+  color: #ba1320;
+}
+.anchor {
+  display: block;
+  position: relative;
+  top: -62px;
+  visibility: idden;
+}
+
+#logo-buch {
+  width: 25%;
+  margin-left: 5px;
+}
+#logo-schriftzug {
+  width: 50%;
+  display: none;
+}
+#unterschrift {
+  width: 50%;
+}
+#unterüberschrift {
+  font-size: 14px;
+}
+
+.jumbotron h2 {
+  font-size: 1.5em;
+}
+.jumbotron.d-md-flex {
+  margin-bottom: 20px;
+}
+#input-field-info {
+  border: 1px solid #ba1320;
+  border-radius: .2rem;
+}
+.container-style {
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  background-color: #f9ecec;
+  border-radius: 0.3rem;
+}
+#map {
+  max-width: 100%;
+}
+
+/*******************************************************/
+@media (max-width: 575.98px) {
+  #logo-buch {width: 30% !important;}
+}
+@media (min-width: 576px) {
+  #logo-schriftzug {display: inline-block; width: 50%;}
+  /* #map {width: 50%;} */
+  body {padding-top: 6.5rem;}
+  .anchor {
+    top: -80px;
+  }
+}
+@media (min-width: 768px) {
+  body {padding-top: 7.8rem;}
+  #unterüberschrift {font-size: 16px;}
+  .jumbotron h2 {font-size: 1.8em;}
+  .anchor {
+    top: -110px;
+  }
+}
+@media (min-width: 992px) {
+  body {padding-top: 8.5rem;}
+  /* #map {height: 400px;} */
+  #unterschrift {width: 33.33%;}
+  .anchor {
+    top: -135px;
+  }
+}
+@media (min-width: 1200px) {
+  #main-container {max-width: 1500px;}
+  #unterüberschrift {font-size: 20px;}
+  .jumbotron h2 {font-size: 2em;}
+  #unterschrift {width: 20%;}
+}
+
+/********************************************************/
