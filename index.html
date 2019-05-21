@@ -80,36 +80,89 @@
       <div id="input-field-info" class="p-2 mb-3 text-center" width="400" height="100" >Freitag Nachmittag geschlossen<br></div>
     </div>
 
-
     <div class="anchor" id="3"></div>
     <div class="container-style">
-      <div class="justify-content-between">
+      <h3 class="text-center text-md-left">Angebot</h3>
 
-        <h3 class="text-center text-md-left">Angebot</h3>
 
-        <div class="card p-lg-3 p-2 m-1">Christliche Literatur
+        <div class="card-columns">
+          <div class="card">
+            <img class="card-img-top" src="img/IMG_7846.JPG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Christliche Literatur</h5>
+              <p class="card-text">Stöbern Sie in gemütlicher Ambiente</p>
+            </div>
+          </div>
+          <div class="card p-3">
+            <blockquote class="blockquote mb-0 card-body">
+              <p>Buchhüllen für Bibel, Gesangbuch und Gotteslob</p>
+              <footer class="blockquote-footer">
+                <small class="text-muted">
+                individuelle Namensprägung möglich
+                </small>
+              </footer>
+            </blockquote>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/IMG_7870.JPG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-text">Karten</h5>
+              <small class="text-muted">
+              zu Geburtstagen, Hochzeiten und Trauerkarten
+              </small>
+            </div>
+          </div>
+          <div class="card text-center p-3">
+              <h5>Kalender</h5>
+              <p class="card-text"><small class="text-muted">Entdecken Sie ihren Planer fürs neue Jahr</small></p>
+          </div>
+          <div class="card text-center">
+            <div class="card-body">
+              <h5 class="card-title">Schmuck</h5>
+              <p class="card-text">Ketten, Ringe, Ohrschmuck</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/IMG_7844.JPG" alt="Card image">
+            <div class="card-body">
+              <h5 class="card-title">Geschenkartikel</h5>
+              <p class="card-text">Bronzefiguren, Anhänger, Deko-Artikel</p>
+            </div>
+          </div>
+          <div class="card p-3">
+            <img id="gutschein-logo" class="text-left" onClick="roll" src="img/logo-buecherkiste.png">
+            <blockquote class="text-right blockquote mb-0">
+              <p>Geschenkgutscheine</p>
+            </blockquote>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text">Gerne bestelle ich Ihnen jedes Buch über Nacht</p>
+              <p class="card-text"><small class="text-muted"></small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/holzengel.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">kirchliche Feste</h5>
+              <p class="text-muted">Alles rund um Erstkommunion, Firmung und Konfirmation</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/IMG_7850.JPG" alt="Card image cap">
+          </div>
         </div>
-        <div class="card p-lg-3 p-2 m-1">Kalender
-        </div>
-        <div class="card p-lg-3 p-2 m-1">ausgewählte Kinder- und Jugendbücher
-        </div>
-        <div class="card p-lg-3 p-2 m-1">Besondere Geschenkartikel: Schmuck, Spiele, Tassen, Karten, Schreibwaren und vieles mehr
-        </div>
-        <div class="card p-lg-3 p-2 m-1">Alles rund um Erstkommunion, Firmung und Konfirmation
-        </div>
-        <div class="card p-lg-3 p-2 m-1">CDs und DVDs
-        </div>
-        <div class="card p-lg-3 p-2 m-1">Buchhüllen für Bibeln, Gesangbuch, Gotteslob - individuelle Namensprägung möglich
-        </div>
-        <div class="card p-lg-3 p-2 m-1">Heute bestellt, morgen im Laden, ich bestelle gerne für Sie jedes lieferbare Buch
-        </div>
-      </div>
+
+
     </div>
 
+
+
   <div class="anchor" id="4"></div>
-    <div class="container-style mb-2 row m-0 p-3 d-block text-center d-md-flex justify-content-sm-between justify-content-md-start align-items-center">
+    <div class="container-style mb-2 row m-0 p-3 d-block text-center d-md-flex justify-content-sm-between justify-content-md-start align-items-center flex-nowrap">
       <h3 class="mr-auto">Anfahrt</h3>
-      <p class="mb-2 m-md-auto">Die&nbsp;Bücherkiste<br>Schillerstraße&nbsp;32<br>73479&nbsp;Ellwangen</p>
+      <p class="mb-2 m-md-auto p-sm-2 p-lg-0">Die&nbsp;Bücherkiste<br>Schillerstraße&nbsp;32<br>73479&nbsp;Ellwangen</p>
       <!-- <h5 class="">Wegbeschreibung</h5> -->
       <button class="btn btn-secondary my-2 my-sm-0 mx-md-1" type="button" data-toggle="collapse" data-target="#richtung-aalen" aria-expanded="false" aria-controls="collapseExample">
         Aus Richtung Aalen
@@ -141,6 +194,8 @@
     </div>
 
     <iframe id="map" class="float-left border rounded p-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.178128259442!2d10.131411315092043!3d48.96913350085774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4798e3a83ddc0173%3A0x4727ee4b7de0692e!2sdie+B%C3%BCcherkiste!5e0!3m2!1sde!2sde!4v1557840326986!5m2!1sde!2sde" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
 
 
     <!-- <div class="col-12 col-md-4 card p-2">Christliche Literatur

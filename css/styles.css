@@ -61,6 +61,23 @@ ol {
 #map {
   max-width: 100%;
 }
+#gutschein-logo {
+  opacity: 0.9;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+#gutschein-logo:hover {
+  transform: scaleX(1);
+  transition: 0.8s;
+}
+
+.card-img-top {
+  opacity: 0.8;
+}
+.card-img-top:hover {
+  opacity: 1;
+  transition: 0.35s;
+}
 
 /*******************************************************/
 @media (max-width: 575.98px) {
