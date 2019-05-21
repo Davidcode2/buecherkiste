@@ -9,12 +9,6 @@ ol {
   line-height: 1.6rem;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-.shadow {
-  box-shadow: 0 0.1rem 1.5rem rgba(0, 0, 0, 0.15) !important;
-}
 .navbar-brand  {
   margin-right: 0;
 }
@@ -25,6 +19,12 @@ ol {
 }
 .navbar-toggler-icon { /* not currently used (replaced with hamburger menu button) */
   color: #ba1320;
+}
+.anchor {
+  display: block;
+  position: relative;
+  top: -62px;
+  visibility: idden;
 }
 
 #logo-buch {
@@ -52,14 +52,14 @@ ol {
   border: 1px solid #ba1320;
   border-radius: .2rem;
 }
-.jumbotron.custom {
+.container-style {
   padding: 1rem 1rem;
   margin-bottom: 1rem;
   background-color: #f9ecec;
   border-radius: 0.3rem;
 }
 #map {
-  width: 100%;
+  max-width: 100%;
 }
 
 /*******************************************************/
@@ -68,25 +68,33 @@ ol {
 }
 @media (min-width: 576px) {
   #logo-schriftzug {display: inline-block; width: 50%;}
-  #map {width: 50%;}
+  /* #map {width: 50%;} */
   body {padding-top: 6.5rem;}
-  #unterschrift {width: 33.33%;}
-
+  .anchor {
+    top: -80px;
+  }
 }
 @media (min-width: 768px) {
   body {padding-top: 7.8rem;}
   #unterüberschrift {font-size: 16px;}
   .jumbotron h2 {font-size: 1.8em;}
+  .anchor {
+    top: -110px;
+  }
 }
 @media (min-width: 992px) {
   body {padding-top: 8.5rem;}
-  #map {height: 400px;}
-  #unterschrift {width: 20%;}
+  /* #map {height: 400px;} */
+  #unterschrift {width: 33.33%;}
+  .anchor {
+    top: -135px;
+  }
 }
 @media (min-width: 1200px) {
   #main-container {max-width: 1500px;}
   #unterüberschrift {font-size: 20px;}
   .jumbotron h2 {font-size: 2em;}
+  #unterschrift {width: 20%;}
 }
 
 /********************************************************/
