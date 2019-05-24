@@ -61,6 +61,16 @@ ol {
 #map {
   max-width: 100%;
 }
+#heart-fas {
+  text-decoration: none;
+  color: #ba1320;
+  transition: .3s;
+  margin: auto;
+}
+#heart-fas:hover {
+  transform: scale(3);
+}
+
 
 /*******************************************************/
 @media (max-width: 575.98px) {

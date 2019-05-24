@@ -2,7 +2,7 @@
 //activate menu link when in current scrolling position, add smooth scroll effect
 var lastId,
     topMenu = $("#top-menu"),
-    topMenuHeight = topMenu.outerHeight()-15,
+    topMenuHeight = topMenu.outerHeight()-12,
     // All list items
     menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items
