@@ -2,7 +2,7 @@
 //activate menu link when in current scrolling position, add smooth scroll effect
 var lastId,
     topMenu = $("#top-menu"),
-    topMenuHeight = topMenu.outerHeight()-12,
+    topMenuHeight = topMenu.outerHeight()-8,
     // All list items
     menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items
@@ -43,4 +43,21 @@ $(window).scroll(function(){
          .parent().removeClass("active")
          .end().filter("[href='#"+id+"']").parent().addClass("active");
    }
+});
+
+
+//this collapses the navbar after clicking on a link and even retains the scroll animation
+//now i can close the nav with the bar button using the "collapse" on data-toggle
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+    $('#nav-icon3').toggleClass('open')
+
+});
+
+// animated bar icon
+$(document).ready(function(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+
+	});
 });
