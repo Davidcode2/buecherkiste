@@ -61,23 +61,6 @@ ol {
 #map {
   max-width: 100%;
 }
-#gutschein-logo {
-  opacity: 0.9;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-#gutschein-logo:hover {
-  transform: scaleX(1);
-  transition: 0.8s;
-}
-
-.card-img-top {
-  opacity: 0.8;
-}
-.card-img-top:hover {
-  opacity: 1;
-  transition: 0.35s;
-}
 
 /*******************************************************/
 @media (max-width: 575.98px) {
@@ -103,9 +86,10 @@ ol {
   body {padding-top: 8.5rem;}
   /* #map {height: 400px;} */
   #unterschrift {width: 33.33%;}
-  .anchor {
-    top: -135px;
-  }
+  .anchor {top: -135px;}
+  .card {opacity: 0.82;}
+  .card:hover {opacity: 1; transform: scale(1.01); box-shadow: 2px 8px 8px -6px rgb(0,0,0,.3); transition: 0.35s;}
+  .btn:hover {box-shadow: 3px 5px 8px 0px rgb(0,0,0,.3);  transition: 0.35s;}
 }
 @media (min-width: 1200px) {
   #main-container {max-width: 1500px;}
