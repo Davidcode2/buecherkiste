@@ -2,7 +2,7 @@
 //activate menu link when in current scrolling position, add smooth scroll effect
 var lastId,
     topMenu = $("#top-menu"),
-    topMenuHeight = topMenu.outerHeight()-8,
+    topMenuHeight = topMenu.outerHeight(), //+ or - some number here to change the endpoint scrollposition
     // All list items
     menuItems = topMenu.find("a"),
     // Anchors corresponding to menu items
@@ -50,7 +50,8 @@ $(window).scroll(function(){
 //now i can close the nav with the bar button using the "collapse" on data-toggle
 $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
-    $('#nav-icon3').toggleClass('open')
+    $('#nav-icon3').toggleClass('open');
+
 
 });
 
