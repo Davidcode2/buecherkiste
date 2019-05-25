@@ -62,3 +62,8 @@ $(document).ready(function(){
 
 	});
 });
+// close expanded nav when clicking anywhere outside nav.
+function navbarClose() {
+  $('.navbar-collapse').collapse('hide');
+  $('#nav-icon3').toggleClass('open');
+}

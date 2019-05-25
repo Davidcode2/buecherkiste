@@ -28,21 +28,17 @@
   <header>
     <nav class="shadow navbar navbar-expand-sm navbar-light bg-light justify-content-between align-items-sm-end fixed-top">
       <a class="navbar-brand" href="index.html">
-        <img id="logo-buch" src="img/logo-buecherkiste.png" width="25%" height="100" class="d-inline-block align-bottom img-fluid" alt="logo der bücherkiste rotes geöffnetes buch">
-        <img id="logo-schriftzug" src="img/nur-schriftzug.png" width="50%" height="100" class="img-fluid" alt="schriftzug die bücherkiste">
+        <img id="logo-buch" src="img/logo-buecherkiste.png" width="125" height="108" class="d-inline-block align-bottom img-fluid" alt="logo der bücherkiste rotes geöffnetes buch">
+        <img id="logo-schriftzug" src="img/nur-schriftzug.png" width="250" height="88" class="img-fluid" alt="schriftzug die bücherkiste">
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div id="nav-icon3">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
-
+      <button id="nav-icon3" class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="collapse_target">
+      <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul id="top-menu" class="navbar-nav ml-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html#1">Home</a>
@@ -64,38 +60,43 @@
     </nav>
   </header>
 
-  <div class="container-fluid">
-    <div class="container-style">
-      <div class="row pt-lg-5 pt-2">
-        <h2 class="col pb-3">Impressum</h2>
+  <div onclick="navbarClose();">
 
-        <div class="col">
-          <h5 class="">die Bücherkiste</h5>
-          <p>Gesellschaft&nbsp;bürgerlichen&nbsp;Rechts</p>
-          <p>Andrea Ruf-Lingel<br>
-            Schillerstraße 32<br>
-            73479 Ellwangen
-          </p>
-        </div>
-        <div class="col">
-          <a href="tel:079616251" class="no-dec"><i class="fas fa-phone p-1"></i>0 7961 6251</a>
-          <p><i class="fas fa-at p-1"></i>
-            buch(at)buch-ellwangen.de
-          </p>
-          <p>Umsatzsteuernummer: 50323/4660</p>
+    <div class="container-fluid">
+      <div class="container-style">
+        <div class="row pt-lg-5 pt-2">
+          <h2 class="col pb-3">Impressum</h2>
+
+          <div class="col">
+            <h5 class="">die Bücherkiste</h5>
+            <p>Gesellschaft&nbsp;bürgerlichen&nbsp;Rechts</p>
+            <p>Andrea Ruf-Lingel<br>
+              Schillerstraße 32<br>
+              73479 Ellwangen
+            </p>
+          </div>
+          <div class="col">
+            <a href="tel:079616251" class="no-dec"><i class="fas fa-phone p-1"></i>0 7961 6251</a>
+            <p><i class="fas fa-at p-1"></i>
+              buch(at)buch-ellwangen.de
+            </p>
+            <p>Umsatzsteuernummer: 50323/4660</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 
-  <img class="img-fluid" src="img/impressum-large.JPG" srcset="img/impressum-tall.JPG 425w, img/impressum-small.JPG 768w" alt="blauer himmel mit wolken">
-  <div class="col-12">
-    <div class="carousel-caption">
-      <a href="index.html#1">
-        <i id="heart-fas" class="fas fa-heart"></i>
-      </a>
+    <img class="img-fluid" srcset="img/impressum-retina.JPG 1314w, img/impressum.JPG 5184w, img/impressum-large.JPG 1440w, img/impressum-small.JPG 768w, img/impressum-tall.JPG 425w"
+         sizes="(min-width: 1441px) 5184px, (min-width: 769px) 1440px, (min-width: 600px) 768px, (min-width: 300px) 1313px, 1440px" src="img/impressum-large.JPG" alt="blauer himmel mit wolken">
+    <div class="col-12">
+      <div class="carousel-caption">
+        <a href="index.html#1">
+          <i id="heart-fas" class="fas fa-heart"></i>
+        </a>
+      </div>
     </div>
+
   </div>
 
 

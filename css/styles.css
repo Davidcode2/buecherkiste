@@ -29,7 +29,7 @@ button.navbar-toggler:focus { outline: 1px none; }
   height: 30px;
   padding: 0px;
   position: relative;
-  margin: 0px auto;
+  margin-right: 10px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
