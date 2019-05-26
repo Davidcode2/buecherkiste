@@ -62,8 +62,12 @@ $(document).ready(function(){
 
 	});
 });
+
 // close expanded nav when clicking anywhere outside nav.
 function navbarClose() {
-  $('.navbar-collapse').collapse('hide');
-  $('#nav-icon3').toggleClass('open');
+  var ariaToggle = $('#nav-icon3').attr("aria-expanded");
+  if (ariaToggle == "true") {
+    $('.navbar-collapse').collapse('hide');
+    $('#nav-icon3').toggleClass('open');
+  }
 }

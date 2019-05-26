@@ -87,15 +87,21 @@
     </div>
 
 
-    <img class="img-fluid" srcset="img/impressum-retina.JPG 1314w, img/impressum.JPG 5184w, img/impressum-large.JPG 1440w, img/impressum-small.JPG 768w, img/impressum-tall.JPG 425w"
-         sizes="(min-width: 1441px) 5184px, (min-width: 769px) 1440px, (min-width: 600px) 768px, (min-width: 300px) 1313px, 1440px" src="img/impressum-large.JPG" alt="blauer himmel mit wolken">
-    <div class="col-12">
-      <div class="carousel-caption">
-        <a href="index.html#1">
-          <i id="heart-fas" class="fas fa-heart"></i>
-        </a>
+    <picture>
+      <source media="(max-width: 500px)" srcset="img/impressum-retina.JPG">
+      <source media="(max-width: 768px)" srcset="img/impressum-small.JPG">
+      <source media="(max-width: 1440px)" srcset="img/impressum-large.JPG ">
+      <source media="(min-width: 1441px)" srcset="img/impressum.JPG ">
+
+      <img class="img-fluid" src="img/impressum-large.JPG " alt="Blauer Himmel und weiße Wolken">
+      <div class="col-12">
+        <div class="carousel-caption">
+          <a href="index.html#1">
+            <i id="heart-fas" class="fas fa-heart"></i>
+          </a>
+        </div>
       </div>
-    </div>
+    </picture>
 
   </div>
 
