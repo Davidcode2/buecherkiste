@@ -64,6 +64,7 @@ $(document).ready(function(){
 });
 
 // close expanded nav when clicking anywhere outside nav.
+// also possible to do this by adding a blur function on toggler
 function navbarClose() {
   var ariaToggle = $('#nav-icon3').attr("aria-expanded");
   if (ariaToggle == "true") {
@@ -71,3 +72,39 @@ function navbarClose() {
     $('#nav-icon3').toggleClass('open');
   }
 }
+
+// dynamically load page
+(function (global) {
+
+  var dbk = {};
+  var homeHtml = "snippets/home-snippet.html";
+
+  // convinience function for inserting innerHTML for "select"
+  var insertHtml = function (selector, html) {
+    var targetElem = document.querySelector(selector);
+    targetElem.innerHTML = html;
+  };
+
+  //show loading icon
+  var showLoading = function (selector) {
+    var html = "<div class='text-center pt-5'>";
+    html += "<img src='img/ajax-loader.gif'></div>";
+    insertHtml(selector, html);
+  };
+
+  // on page load (before images or CSS)
+  document.addEventListener("DOMContentLoaded", function (event) {
+    showLoading("#main-content");
+
+  //on first load, show home view
+    $ajaxUtils.sendGetRequest(
+      homeHtml,
+      function (responseText) {
+        document.querySelector("#main-content").innerHTML = responseText;
+      },
+      false);
+});
+
+global.$dbk = dbk;
+
+})(window);
