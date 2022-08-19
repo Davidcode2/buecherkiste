@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="de">
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -14,7 +15,8 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
@@ -22,38 +24,43 @@
   <title>Die Bücherkiste</title>
 
 </head>
+
 <body onload>
 
-  <div class="anchor" id="1"></div>
-  <header>
-    <nav class="shadow navbar navbar-expand-sm navbar-light bg-light justify-content-between align-items-sm-end fixed-top">
-      <a class="navbar-brand" href="#1">
-        <img id="logo-buch" src="img/logo-buecherkiste.png" width="125" height="108" class="d-inline-block align-bottom img-fluid" alt="logo der bücherkiste rotes geöffnetes buch">
-        <img id="logo-schriftzug" src="img/nur-schriftzug.png" width="250" height="88" class="img-fluid" alt="schriftzug die bücherkiste">
+  <div class="anchor" id="Home"></div>
+  <header id="top-menu">
+    <nav
+      class="shadow navbar navbar-expand-sm navbar-light bg-light justify-content-between align-items-sm-end fixed-top">
+      <a class="navbar-brand" href="#Home">
+        <img id="logo-buch" src="img/logo-buecherkiste.png" width="125" height="108"
+          class="d-inline-block align-bottom img-fluid" alt="logo der bücherkiste rotes geöffnetes buch">
+        <img id="logo-schriftzug" src="img/nur-schriftzug.png" width="250" height="88" class="img-fluid"
+          alt="schriftzug die bücherkiste">
       </a>
-      <button  id="nav-icon3" class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+      <button id="nav-icon3" class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+        aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul id="top-menu" class="navbar-nav ml-auto">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#1">Home<span class="sr-only">(current)</span></a>
+            <a class="nav-link" id="home" href="#Home">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#2">Öffnungszeiten</a>
+            <a class="nav-link" id="hours" href="#Öffnungszeiten">Öffnungszeiten</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#3">Angebot</a>
+            <a class="nav-link" id="angebot" href="#Angebot">Angebot</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#4">Anfahrt</a>
+            <a class="nav-link" id="anfahrt" href="#Anfahrt">Anfahrt</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="impressum.html">§</a>
+            <a class="nav-link" id="imp" href="impressum.html">§</a>
           </li>
         </ul>
       </div>
@@ -67,27 +74,61 @@
 
     <div class="container-style">
       <div class="d-md-flex align-items-start justify-content-center flex-lg-row-reverse">
-        <img src="img/startseite.PNG" alt="bild der buchhandlung" class="img-fluid mx-auto d-block rounded grow-3 p-0">
+        <img src="img/startseite.PNG" alt="bild der buchhandlung" class="img-fluid mx-auto rounded grow-3 p-0">
         <div class="flex-fill">
-          <h2 class="display-5 pt-md-0 pl-md-3 pl-lg-0 pr-md-3 pt-4 text-center text-md-left grow-2">Die christliche Buchhandlung in Ellwangen</h2>
-          <p id="unterüberschrift" class="lead text-center text-md-left grow-0 pt-3 pl-md-3 pt-lg-0 pl-lg-0">Die kleine Buchhandlung mit der herzlichen Atmosphäre<br>Reinschauen -Wohlfühlen- und den Alltag vergessen.<br>Ich freue mich auf Ihren Besuch</p>
-          <img src="img/unterschrift.PNG" alt="unterschrift der inhaberin" class="img-fluid d-block mx-auto m-md-0 pr-md-3 pl-md-3 pr-lg-0 pl-lg-0" id="unterschrift">
+          <h2 class="display-5 pt-md-0 pl-md-3 pl-lg-0 pr-md-3 pt-4 text-center text-md-left grow-2">Die christliche
+            Buchhandlung in Ellwangen</h2>
+          <p id="unterüberschrift" class="lead text-center text-md-left grow-0 pt-3 pl-md-3 pt-lg-0 pl-lg-0">Die kleine
+            Buchhandlung mit der herzlichen Atmosphäre<br>Reinschauen -Wohlfühlen- und den Alltag vergessen.<br>Ich
+            freue mich auf Ihren Besuch</p>
+          <img src="img/unterschrift.PNG" alt="unterschrift der inhaberin"
+            class="img-fluid d-block mx-auto m-md-0 pr-md-3 pl-md-3 pr-lg-0 pl-lg-0" id="unterschrift">
         </div>
       </div>
     </div>
 
-    <div class="anchor" id="2"></div>
-    <div class="container-style row mx-0 justify-content-around justify-content-sm-between">
+    <div class="anchor" id="Öffnungszeiten"></div>
+    <div class="container-style row mx-0 justify-content-around justify-content-lg-between">
       <h3 class="">Öffnungszeiten</h3>
-      <p class="">Montag&nbsp;-&nbsp;Freitag<br>
-        <strong>10&nbsp;Uhr&nbsp;bis&nbsp;13&nbsp;Uhr<br></strong>
-        Montag,&nbsp;Dienstag und Donnerstag<br>
-        <strong>15&nbsp;Uhr&nbsp;bis&nbsp;18&nbsp;Uhr<br></strong>
-      </p>
-      <div id="input-field-info" class="p-2 mb-3 text-center">Freitag Nachmittag geschlossen<br></div>
+      <div id="input-field-info" class="p-2 mb-3 text-center text-md-left">
+        <h5 class="text-danger font-weight-bold">Endspurt:</h5>
+        <p class="">Dienstag bis Samstag von 10 Uhr bis 13 Uhr geöffnet und Dienstag bis Freitag von 15 Uhr bis 18
+          Uhr.<br>
+          Am 31.&nbsp;Juli 2022 schließt die Bücherkiste für immer.<br>Kommen Sie gerne noch vorbei. Ich freue mich auf
+          Sie!
+          <!--Natürlich können Sie Ihre&nbsp;Bestellung auch
+          per&nbsp;<a id="e-mailinfo" href="#e-mail">E-Mail</a> oder telefonisch aufgeben.<br>-->
+        </p>
+        <br>
+      </div>
+      <!--******************  HIER WEITERE INFO -->
+      <!--******************  HIER DIE BITTE BEACHTEN INFO -->
+      <!--******************  HIER DIE BITTE BEACHTEN INFO -->
+
+      <!--******************  WEITERER ROTER INFOKASTEN 
+      <div id="input-field-info" class="p-2 mb-3 text-center text-md-left">
+      </div>
+      -->
+      <!-- ******************  WEITERER ROTER INFOKASTEN ---->
     </div>
 
-    <div class="anchor" id="3"></div>
+    <!--****************** Zusatz INFO -->
+    <div class="container-style row align-items-md-center mx-0">
+      <h3 class=""></h3>
+      <img src="img/blurred-book.JPG" alt="Bild eines Buches" class="img-fluid col-12 col-md-auto rounded grow-3 p-0">
+      <p class="col-12 col-md text-center p-2 mb-3">Als mich viele Sorgen quälten,<br>gab dein Trost mir
+        neue<br>Hoffnung und Freude.<br>Psalm 94,19<br>
+        <br>
+      </p>
+      <p class="col-12 col-md text-center p-2 mb-3">Ich aber will mich auf den<br>Herrn verlassen.
+        Erwartungsvoll<br>will ich nach dem Herrn<br>Ausschau halten.<br>Micha 7,7
+      </p>
+    </div>
+    <!--******************  Zusatz INFO -->
+
+
+
+    <div class="anchor" id="Angebot"></div>
     <div class="container-style">
       <h3 class="text-center text-md-left pb-3">Angebot</h3>
 
@@ -123,15 +164,15 @@
         </div>
         <div class="card text-center">
           <div class="card-body">
-            <h5 class="card-title">Schmuck - CDs - DVDs</h5>
-            <p class="text-muted">Ketten, christliche Musik und Filme</p>
+            <h5 class="card-title">Geschenkartikel</h5>
+            <p class="text-muted">Bronzefiguren, Anhänger, Deko-Artikel</p>
           </div>
         </div>
         <div class="card">
           <img class="card-img-top" src="img/holzherz.JPG" alt="hölzernes Herz bunt bemalt">
           <div class="card-body">
-            <h5 class="card-title">Geschenkartikel</h5>
-            <p class="text-muted">Bronzefiguren, Anhänger, Deko-Artikel</p>
+            <h5 class="card-title">Schmuck - CDs - DVDs</h5>
+            <p class="text-muted">Ketten, christliche Musik und Filme</p>
           </div>
         </div>
         <div class="card">
@@ -147,75 +188,91 @@
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="img/herzliche-worte.JPG" alt="Herzförmiges Papier und karte mit Aufschrift herzliche Worte">
+          <img class="card-img-top" src="img/herzliche-worte.JPG"
+            alt="Herzförmiges Papier und karte mit Aufschrift herzliche Worte">
           <div class="card-body">
             <h5 class="card-title">Parken Sie direkt vor der Ladentüre</h5>
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="img/wolken.JPG" alt="Herzförmiges Papier und karte mit Aufschrift herzliche Worte">
-          <div class="card-body">
+          <img class="card-img-top" src="img/wolken.JPG"
+            alt="Herzförmiges Papier und karte mit Aufschrift herzliche Worte">
+          <div class="card-body" id="e-mail">
             <h5 class="card-title">Geschenkgutscheine</h5>
           </div>
         </div>
-        <div class="card">
+        <div class="card" id="fragen">
           <div class="card-body">
             <h5 class="card-title">Sie haben Fragen oder möchten eine Bestellung aufgeben?</h5>
-            <a href="tel:079616251" class="no-dec" style="color: #ba1320;"><i class="fas fa-phone p-1"></i>07961 6251</a>
-            <p><i class="fas fa-at p-1"></i>buch(at)buch-ellwangen.de
-            </div>
+            <a href="tel:079616251" class="no-dec" style="color: #ba1320;"><i class="fas fa-phone p-1"></i>07961
+              6251</a>
+            <p><i class="fas fa-at p-1"></i><span class="" id="e-mail_add">buch(at)buch-ellwangen.de</span>
           </div>
         </div>
-
-
       </div>
-
-
-
-      <div class="anchor" id="4"></div>
-      <div class="container-style mb-2 row m-0 p-3 d-block text-center d-md-flex justify-content-sm-between justify-content-md-start align-items-center flex-nowrap">
-        <h3 class="mr-auto">Anfahrt</h3>
-        <p class="mb-2 m-md-auto p-sm-2 p-lg-0">Die&nbsp;Bücherkiste<br>Schillerstraße&nbsp;32<br>73479&nbsp;Ellwangen</p>
-        <!-- <h5 class="">Wegbeschreibung</h5> -->
-        <button class="btn btn-secondary my-2 my-sm-0 mx-md-1" type="button" data-toggle="collapse" data-target="#richtung-aalen" aria-expanded="false" aria-controls="richtung-aalen">
-          Aus Richtung Aalen
-        </button>
-        <button class="btn btn-secondary mx-md-1" type="button" data-toggle="collapse" data-target="#richtung-hall" aria-expanded="false" aria-controls="richtung-hall">
-          Aus Richtung Crailsheim
-        </button>
-      </div>
-
-      <div class="collapse" id="richtung-aalen">
-        <h5 class="px-2 pt-2">Aus Richtung Aalen:</h5>
-        <ol class="px-4">
-          <li>Folgen Sie der B290 über die Westtangente in Richtung Crailsheim, vorbei an der Stadthalle und dem Alamannen-Museum. An der Ampel-Abzweigung nach Nördlingen/Dinkelsbühl rechts abbiegen.</li>
-          <li>Nach Überqueren der Siemensbrücke (kreuzt die Bahnlinie) links in Richtung Autobahn/Dinkelsbühl abbiegen.</li>
-          <li>Folgen Sie der Vorfahrtsstrasse bis zum Kreisverkehr; hier rechts Richtung Stadtmitte (Mittelhofstr) abbiegen</li>
-          <li>dann die 2. Abzweigung rechts in die Schillerstr.32</li>
-          <li>Willkommen bei der Bücherkiste!</li>
-        </ol>
-      </div>
-      <div class="collapse" id="richtung-hall">
-        <h5 class="px-2 pt-2">Aus Richtung Schwäbisch Hall / Crailsheim:</h5>
-        <ol class="px-4">
-          <li>Folgen Sie der B290 bis zur Ampel-Abzweigung nach Nördlingen/Dinkelsbühl. Hier links abbiegen.</li>
-          <li>Nach Überqueren der Siemensbrücke (kreuzt die Bahnlinie) links in Richtung Autobahn/Dinkelsbühl abbiegen.</li>
-          <li>Folgen Sie der Vorfahrtsstrasse bis zum 1. Kreisverkehr; hier rechts Richtung Stadtmitte (Mittelhofstr) abbiegen</li>
-          <li>dann die 2. Abzweigung rechts in die Schillerstr.32</li>
-          <li>Willkommen bei der Bücherkiste!</li>
-        </ol>
-      </div>
-
-      <iframe id="map" class="float-left border rounded-top p-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.178128259442!2d10.131411315092043!3d48.96913350085774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4798e3a83ddc0173%3A0x4727ee4b7de0692e!2sdie+B%C3%BCcherkiste!5e0!3m2!1sde!2sde!4v1557840326986!5m2!1sde!2sde" width="2440" height="200" style="border:0" allowfullscreen></iframe>
 
     </div>
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="jquery-3.4.1.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
-  </html>
+
+    <div class="anchor" id="Anfahrt"></div>
+
+    <div id="group">
+      <div
+        class="container-style mb-2 row m-0 p-3 d-block text-center d-md-flex justify-content-sm-between justify-content-md-start align-items-center flex-nowrap">
+        <h3 class="mr-auto">Anfahrt</h3>
+        <p class="mb-2 m-md-auto p-sm-2 p-lg-0">Die&nbsp;Bücherkiste<br>Schillerstraße&nbsp;32<br>73479&nbsp;Ellwangen
+        </p>
+        <!-- <h5 class="">Wegbeschreibung</h5> -->
+        <button class="btn btn-danger my-2 my-sm-0 mx-md-1" type="button" data-toggle="collapse"
+          data-target="#richtung-aalen" aria-expanded="false" aria-controls="richtung-aalen">
+          Aus Richtung Aalen
+        </button>
+        <button class="btn btn-danger mx-md-1" type="button" data-toggle="collapse" data-target="#richtung-hall"
+          aria-expanded="false" aria-controls="richtung-hall">
+          Aus Richtung Crailsheim
+        </button>
+      </div>
+
+      <div class="collapse" id="richtung-aalen" data-parent="#group">
+        <h5 class="px-2 pt-2">Aus Richtung Aalen:</h5>
+        <ol class="px-4">
+          <li>Folgen Sie der B290 über die Westtangente in Richtung Crailsheim, vorbei an der Stadthalle und dem
+            Alamannen-Museum. An der Ampel-Abzweigung nach Nördlingen/Dinkelsbühl rechts abbiegen.</li>
+          <li>Nach Überqueren der Siemensbrücke (kreuzt die Bahnlinie) links in Richtung Autobahn/Dinkelsbühl abbiegen.
+          </li>
+          <li>Folgen Sie der Vorfahrtsstrasse bis zum Kreisverkehr; hier rechts Richtung Stadtmitte (Mittelhofstr)
+            abbiegen</li>
+          <li>dann die 2. Abzweigung rechts in die Schillerstr.32</li>
+          <li>Willkommen bei der Bücherkiste!</li>
+        </ol>
+      </div>
+      <div class="collapse" id="richtung-hall" data-parent="#group">
+        <h5 class="px-2 pt-2">Aus Richtung Schwäbisch Hall / Crailsheim:</h5>
+        <ol class="px-4">
+          <li>Folgen Sie der B290 bis zur Ampel-Abzweigung nach Nördlingen/Dinkelsbühl. Hier links abbiegen.</li>
+          <li>Nach Überqueren der Siemensbrücke (kreuzt die Bahnlinie) links in Richtung Autobahn/Dinkelsbühl abbiegen.
+          </li>
+          <li>Folgen Sie der Vorfahrtsstrasse bis zum 1. Kreisverkehr; hier rechts Richtung Stadtmitte (Mittelhofstr)
+            abbiegen</li>
+          <li>dann die 2. Abzweigung rechts in die Schillerstr.32</li>
+          <li>Willkommen bei der Bücherkiste!</li>
+        </ol>
+      </div>
+    </div>
+
+    <iframe id="map" class="float-left border rounded-top p-0"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.178128259442!2d10.131411315092043!3d48.96913350085774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4798e3a83ddc0173%3A0x4727ee4b7de0692e!2sdie+B%C3%BCcherkiste!5e0!3m2!1sde!2sde!4v1557840326986!5m2!1sde!2sde"
+      width="2440" height="200" style="border:0" allowfullscreen></iframe>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="jquery-3.4.1.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

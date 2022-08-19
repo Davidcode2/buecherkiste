@@ -157,6 +157,7 @@ button.navbar-toggler:focus { outline: 1px none; }
   color: black;
 }
 
+
 /*******************************************************/
 @media (max-width: 575.98px) {
   #logo-buch {width: 30% !important;}
@@ -167,6 +168,17 @@ button.navbar-toggler:focus { outline: 1px none; }
   body {padding-top: 6.5rem;}
   .anchor {
     top: -80px;
+
+  }
+  .card-columns {
+    -webkit-column-count: 1 !important;
+    -moz-column-count: 1 !important;
+    column-count: 1 !important;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
   }
 }
 @media (min-width: 768px) {
@@ -175,6 +187,16 @@ button.navbar-toggler:focus { outline: 1px none; }
   .jumbotron h2 {font-size: 1.8em;}
   .anchor {
     top: -110px;
+  }
+  .card-columns {
+    -webkit-column-count: 3 !important;
+    -moz-column-count: 3 !important;
+    column-count: 3 !important;
+    -webkit-column-gap: 1.25rem;
+    -moz-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
   }
 }
 @media (min-width: 992px) {
